@@ -35,7 +35,8 @@ namespace HealthCheck
                         }),
                         totalStatus = r.Status,
                         totalResponseTime = r.TotalDuration.TotalMilliseconds
-                    }, jsonSerializerOptions
+                    }, 
+                    jsonSerializerOptions
                 );
 
                 await c.Response.WriteAsync(result);
